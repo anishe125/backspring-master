@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="backspring-master">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/omg/src/main/java" />
+      <root url="file://$PROJECT_DIR$/orderserv/src/main/java" />
+      <root url="file://$PROJECT_DIR$/payment/src/main/java" />
+    </SOURCES>
+  </library>
+</component>
