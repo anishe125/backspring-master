@@ -1,6 +1,6 @@
 package pack.apigateway.dto;
 
-public class AggregatedOrderItemDro {
+public class AggregatedCartItemDro {
 
     private int id;
     private String name;
@@ -9,15 +9,15 @@ public class AggregatedOrderItemDro {
     private int availableAmount;
     private int orderAmount;
 
-    public AggregatedOrderItemDro() {}
+    public AggregatedCartItemDro() {}
 
-    public AggregatedOrderItemDro(ItemDto itemDto, OrderItemDto orderItemDto) {
+    public AggregatedCartItemDro(ItemDto itemDto, CartItemDto cartItemDto) {
         this.id = itemDto.getId();
         this.name = itemDto.getName();
         this.price = itemDto.getPrice();
         this.actualAmount = itemDto.getActualAmount();
         this.availableAmount = itemDto.getAvailableAmount();
-        this.orderAmount = orderItemDto.getAmount();
+        this.orderAmount = cartItemDto.getAmount();
     }
 
     public int getId() {

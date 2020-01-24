@@ -2,7 +2,7 @@ package pack.apigateway.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class OrderItemDto {
+public class CartItemDto {
 
 
     @JsonProperty("item_id")
@@ -17,7 +17,7 @@ public class OrderItemDto {
     private final int itemId;
     private final int amount;
 
-    public OrderItemDto(@JsonProperty("item_id") int itemId, @JsonProperty("amount") int amount) {
+    public CartItemDto(@JsonProperty("item_id") int itemId, @JsonProperty("amount") int amount) {
         this.itemId = itemId;
         this.amount = amount;
     }

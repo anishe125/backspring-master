@@ -9,11 +9,11 @@ public class AggregatedOrderDto {
     private OrderStatus orderStatus;
     private String totalCost;
 
-    private List<AggregatedOrderItemDro> items;
+    private List<AggregatedCartItemDro> items;
 
     public AggregatedOrderDto() {}
 
-    public AggregatedOrderDto(OrderDto order, List<AggregatedOrderItemDro> items) {
+    public AggregatedOrderDto(OrderDto order, List<AggregatedCartItemDro> items) {
         this.id = order.getId();
         this.totalAmount = order.getTotalAmount();
         this.orderStatus = order.getOrderStatus();
@@ -37,7 +37,7 @@ public class AggregatedOrderDto {
         return totalCost;
     }
 
-    public List<AggregatedOrderItemDro> getItems() {
+    public List<AggregatedCartItemDro> getItems() {
         return items;
     }
 }

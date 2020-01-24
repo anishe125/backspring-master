@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import pack.apigateway.dto.*;
 import pack.apigateway.feign.OrderServiceFeignClient;
-import pack.apigateway.feign.WarehouseServiceFeignClient;
+import pack.apigateway.feign.ItemServiceFeignClient;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 public class ApiGatewayService {
 
     @Autowired
-    private WarehouseServiceFeignClient warehouseServiceFeignClient;
+    private ItemServiceFeignClient itemServiceFeignClient;
 
     @Autowired
     private OrderServiceFeignClient orderServiceFeignClient;
@@ -28,10 +28,10 @@ public class ApiGatewayService {
         ResponseEntity<OrderDto> orderDtoResponseEntity = orderServiceFeignClient.getItemById(id);
         OrderDto orderDto = orderDtoResponseEntity.getBody();
 
-        List<AggregatedOrderItemDro> items = new ArrayList<>();
-        for (OrderItemDto orderItemDto : orderDto.getItems()) {
-            ItemDto itemDto = warehouseServiceFeignClient.getItemById(orderItemDto.getItemId()).getBody();
-            items.add(new AggregatedOrderItemDro(itemDto, orderItemDto));
+        List<AggregatedCartItemDro> items = new ArrayList<>();
+        for (CartItemDto cartItemDto : orderDto.getItems()) {
+            ItemDto itemDto = itemServiceFeignClient.getItemById(cartItemDto.getItemId()).getBody();
+            items.add(new AggregatedCartItemDro(itemDto, cartItemDto));
         }
 
         return new AggregatedOrderDto(orderDto, items);

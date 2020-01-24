@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f98e994-3df0-404e-9c33-5900ce05247c" name="Default Changelist" comment="" />
+    <list default="true" id="1f98e994-3df0-404e-9c33-5900ce05247c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../omg/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../payment/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/AggregatedOrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/AggregatedOrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/AggregatedOrderItemDro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/AggregatedCartItemDro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/OrderDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/OrderItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/dto/CartItemDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/feign/WarehouseServiceFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/feign/ItemServiceFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/service/ApiGatewayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/java/pack/apigateway/service/ApiGatewayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../omg/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../omg/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../payment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../payment/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -168,7 +180,7 @@
       <workItem from="1576850150988" duration="15301000" />
       <workItem from="1577637579007" duration="1000" />
       <workItem from="1579798531900" duration="3945000" />
-      <workItem from="1579875432089" duration="6535000" />
+      <workItem from="1579875432089" duration="7519000" />
     </task>
     <servers />
   </component>

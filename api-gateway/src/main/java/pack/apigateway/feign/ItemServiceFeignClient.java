@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import pack.apigateway.dto.ItemDto;
 
 
-@FeignClient(name = "warehouse-service")
-public interface WarehouseServiceFeignClient {
+@FeignClient(name = "item-service")
+public interface ItemServiceFeignClient {
 
-    @GetMapping(path = "/warehouse/items/{id}")
+    @GetMapping(path = "/items/items/{id}")
     ResponseEntity<ItemDto> getItemById(@PathVariable("id") int id);
 }

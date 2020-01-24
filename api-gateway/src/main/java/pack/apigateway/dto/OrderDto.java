@@ -8,7 +8,7 @@ public class OrderDto {
     private Integer totalAmount;
     private OrderStatus orderStatus;
     private String totalCost;
-    private ArrayList<OrderItemDto> items;
+    private ArrayList<CartItemDto> items;
 
     public OrderDto() {}
 
@@ -16,7 +16,7 @@ public class OrderDto {
                     Integer totalAmount,
                     Integer orderStatus,
                     String totalCost,
-                    ArrayList<OrderItemDto> items) {
+                    ArrayList<CartItemDto> items) {
         this.id = id;
         this.totalAmount = totalAmount;
         this.totalCost = totalCost;
@@ -43,11 +43,11 @@ public class OrderDto {
         this.orderStatus = orderStatus;
     }
 
-    public void setItems(ArrayList<OrderItemDto> items) {
+    public void setItems(ArrayList<CartItemDto> items) {
         this.items = items;
     }
 
-    public ArrayList<OrderItemDto> getItems() {
+    public ArrayList<CartItemDto> getItems() {
         return items;
     }
 }
